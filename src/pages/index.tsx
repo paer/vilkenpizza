@@ -1,4 +1,5 @@
 import React, { Dispatch, useState } from "react";
+import Logo from "../assets/vilken_pizza_logo.png";
 
 const pizzas = ["Vesuvio", "Capricciosa", "Kebabpizza"];
 const sauces = ["", "kebabsås", "vitlökssås"];
@@ -92,7 +93,7 @@ export default function Home() {
     <>
       <div className="main">
         <div className="content">
-          <h1>Vilken Pizza?</h1>
+          <img className="logo" src={Logo}></img>
           <p>Vilken pizza vill du äta?</p>
           <button disabled={clicked} onClick={setRandomPizza}>
             Välj åt mig!

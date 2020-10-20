@@ -56,3 +56,39 @@ footer {
   padding: 0 24px;
   box-sizing: border-box;
 }
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  outline: none;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid black;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Quicksand";
+  color: black;
+  text-align: center;
+  transition: all 0.2s;
+  background: white;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  background-color: gray;
+}
+
+button:disabled {
+  background-color: lightgray;
+  border-color: darkgray;
+  color: white;
+}
