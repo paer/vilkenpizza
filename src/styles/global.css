@@ -95,3 +95,17 @@ button:disabled {
   border-radius: 0em;
   /* border: 0; */
 }
+@keyframes logorotation {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.logo {
+  /* animation-name: logorotation;
+  animation-duration: 4s; */
+  animation: logorotation 1s ease-in-out 0s infinite alternate; /*ease-in-out 0 infinite alternate;*/
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
