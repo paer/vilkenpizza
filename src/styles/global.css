@@ -1,0 +1,35 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: "Open Sans";
+}
+
+h1 {
+  font-family: "Quicksand";
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 24px;
+  font-size: 12px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pizza {
+  padding: 24px;
+  font-size: 24px;
+}
+
+.small {
+  font-size: 12px;
+}
