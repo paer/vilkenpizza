@@ -65,17 +65,17 @@ footer {
 button {
   outline: none;
   display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.1em solid black;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
+  padding: 0.7em;
+  border: 0.1em solid #444;
+  border-radius: 0.24em;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Quicksand";
-  color: black;
+  color: white;
   text-align: center;
   transition: all 0.2s;
-  background: white;
+  background: #444;
+  width: 220px;
 }
 
 button:hover {
@@ -88,7 +88,10 @@ button:active {
 }
 
 button:disabled {
-  background-color: lightgray;
-  border-color: darkgray;
-  color: white;
+  background-color: transparent;
+  border-color: lightgray;
+  color: gray;
+  font-size: 16px;
+  border-radius: 0em;
+  /* border: 0; */
 }

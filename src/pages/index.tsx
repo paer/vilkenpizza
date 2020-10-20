@@ -106,9 +106,9 @@ export default function Home() {
               <h2>Beställ från Foodora</h2>
               <p className="pos-info">
                 För att kunna länka till Foodora så behöver du acceptera att Vilken pizza? får åtkomst till din
-                position. Anledningen till detta är för att kunna hämta information om pizzerior nära dig!
+                position. Anledningen till detta är för att kunna hämta information om pizzerior nära dig. Är det OK?
               </p>
-              {!position && <button onClick={confirmPosition}>Det är OK!</button>}
+              {!position && <button onClick={confirmPosition}>Ja, såklart!</button>}
               {position && <button onClick={orderPizza}>Till Foodora!</button>}
               <div className="spacer"></div>
               <p className="small">{dialogues[nLoaded]?.app}</p>
