@@ -1,35 +1,58 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
 }
 
 html {
   font-family: "Open Sans";
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Quicksand";
   text-align: center;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  padding: 24px;
-  font-size: 12px;
+  font-size: 10px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 12px 24px;
+  box-sizing: border-box;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
-.pizza {
-  padding: 24px;
-  font-size: 24px;
+.pos-info {
+  font-size: 12px;
 }
 
 .small {
   font-size: 12px;
+}
+
+.spacer {
+  height: 56px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
