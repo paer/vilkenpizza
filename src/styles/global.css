@@ -78,6 +78,15 @@ button {
   width: 220px;
 }
 
+button.foodora {
+  background-color: rgb(215, 15, 100);
+  border: 0;
+}
+
+button.foodora:hover {
+  background-color: rgb(196, 14, 90);
+}
+
 button:hover {
   color: white;
   background-color: black;

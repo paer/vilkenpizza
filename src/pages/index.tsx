@@ -109,7 +109,11 @@ export default function Home() {
                 position. Anledningen till detta är för att kunna hämta information om pizzerior nära dig. Är det OK?
               </p>
               {!position && <button onClick={confirmPosition}>Ja, såklart!</button>}
-              {position && <button onClick={orderPizza}>Till Foodora!</button>}
+              {position && (
+                <button className="foodora" onClick={orderPizza}>
+                  Till Foodora!
+                </button>
+              )}
               <div className="spacer"></div>
               <p className="small">{dialogues[nLoaded]?.app}</p>
               <button disabled={nLoaded === 2} onClick={setRandomPizza}>
