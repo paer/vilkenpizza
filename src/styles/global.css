@@ -5,6 +5,7 @@ body {
   min-height: 100vh;
   margin: 0;
   position: relative;
+  color: #111;
 }
 
 html {
@@ -91,14 +92,16 @@ button.foodora {
   border-color: rgb(215, 15, 100);
 }
 
-button.foodora:hover {
-  background-color: rgb(196, 14, 90);
-  border-color: rgb(196, 14, 90);
-}
+@media (hover: hover) {
+  button.foodora:hover {
+    background-color: rgb(196, 14, 90);
+    border-color: rgb(196, 14, 90);
+  }
 
-button:hover {
-  color: white;
-  background-color: #e25414;
+  button:hover {
+    color: white;
+    background-color: #e25414;
+  }
 }
 
 button:active {
