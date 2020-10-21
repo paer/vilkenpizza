@@ -1,5 +1,5 @@
 import React, { Dispatch, useState } from "react";
-import Logo from "../assets/vilken_pizza_logo.svg";
+import Logo from "../assets/vilken_pizza_logo.png";
 
 const pizzas = ["Vesuvio", "Capricciosa", "Kebabpizza"];
 const sauces = ["", "kebabsås", "vitlökssås"];

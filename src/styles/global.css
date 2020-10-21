@@ -66,7 +66,7 @@ button {
   outline: none;
   display: inline-block;
   padding: 0.7em;
-  border: 0.1em solid #444;
+  border: 0em solid #b60609;
   border-radius: 0.24em;
   box-sizing: border-box;
   text-decoration: none;
@@ -74,22 +74,31 @@ button {
   color: white;
   text-align: center;
   transition: all 0.2s;
-  background: #444;
+  background: #b60609;
   width: 220px;
 }
-
+/*
+The New Pizza Box Color Scheme palette has 6 colors which are 
+India Green (#11760F)
+White (#FEFEFE)
+UE Red (#B60609)
+Flame (#E25414)
+Deep Champagne (#F3D8A6)
+Earth Yellow (#D3B168)
+*/
 button.foodora {
   background-color: rgb(215, 15, 100);
-  border: 0;
+  border-color: rgb(215, 15, 100);
 }
 
 button.foodora:hover {
   background-color: rgb(196, 14, 90);
+  border-color: rgb(196, 14, 90);
 }
 
 button:hover {
   color: white;
-  background-color: black;
+  background-color: #e25414;
 }
 
 button:active {
