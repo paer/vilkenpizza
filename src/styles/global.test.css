@@ -1,0 +1,332 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  color: #111;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  padding: 36px;
+}
+.logo {
+  height: 240px;
+  min-height: 240px;
+  min-width: 240px;
+  background: url(../assets/vilken_pizza_logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.logo.white {
+  height: 64px;
+  width: 65px;
+  min-height: 64px;
+  min-width: 64px;
+  background: url(../assets/vilken_pizza_logo_white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+@keyframes logorotation {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.logo {
+  /* animation-name: logorotation;
+    animation-duration: 4s; */
+  animation: logorotation 1s ease-in-out 0s infinite alternate; /*ease-in-out 0 infinite alternate;*/
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.logo.white {
+  animation: none;
+}
+
+.pizza {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease-in-out 0.8s;
+}
+
+.green-wrapper.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.green {
+  position: relative;
+  text-align: center;
+}
+
+.green::before {
+  content: "";
+  z-index: -1;
+  width: calc(100% + 1000px);
+  height: calc(100% + 144px);
+  transform-origin: center center;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: -72px;
+  left: -500px;
+  background: #579229;
+}
+
+.green-spacer {
+  height: 72px;
+}
+
+.header {
+  font-weight: bold;
+  font-family: Quicksand;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+/* .foodora {
+  visibility: hidden;
+} */
+
+.foodora .header {
+  color: #fefefe;
+}
+
+.foodora .text-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.foodora .text {
+  width: 380px;
+  padding: 0 12px;
+  text-align: justify;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fefefe;
+  margin-bottom: 24px;
+}
+
+/* Erase styles */
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+}
+
+.button {
+  height: 56px;
+  min-height: 56px;
+  border-radius: 4px;
+  font-family: Quicksand;
+  font-size: 18px;
+}
+
+.pizza .button {
+  width: 238px;
+  background: #b60609;
+  color: #ffffff;
+}
+
+.pizza .header {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 34px;
+  color: #b60609;
+  margin: 24px 0;
+}
+
+.foodora .button {
+  width: 238px;
+  background: #b60609;
+  color: #ffffff;
+}
+
+.foodora .button.foodora {
+  background: rgb(196, 14, 90);
+}
+
+.stripes {
+  position: relative;
+  text-align: center;
+  /* margin: 106px 0; */
+}
+
+.stripes-spacer {
+  height: 112px;
+}
+
+.stripes.outer::before {
+  content: "";
+  z-index: -1;
+  width: calc(100% + 1000px);
+  height: calc(100% + 144px + 32px);
+  transform-origin: center center;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: calc(-76px + -14px);
+  left: -500px;
+  /* background: green; */
+  border: 4px solid #d3b168;
+}
+
+.stripes .inner::before {
+  content: "";
+  z-index: -1;
+  width: calc(100% + 1000px);
+  height: calc(100% + 144px);
+  transform-origin: center center;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: -72px;
+  left: -500px;
+  /* background: green; */
+  border: 2px solid #d3b168;
+}
+
+.satisfied {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.satisfied .content {
+  min-height: 120px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.8s ease-in-out 0.2s;
+}
+
+.satisfied .content.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.8s ease-in-out 1.6s;
+}
+
+.satisfied .header {
+  color: #b60609;
+}
+
+.satisfied .header.disabled {
+  color: #579229;
+}
+
+.satisfied .button {
+  width: 300px;
+  border: 1px solid #b60609;
+  color: #b60609;
+}
+
+.satisfied .button:disabled {
+  border: 1px solid #579229;
+  color: #579229;
+}
+
+/* .stripes.outer::before {
+  content: "";
+  z-index: -1;
+  width: calc(100% + 1000px);
+  height: calc(100% + 144px);
+  transform-origin: center center;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: -72px;
+  left: -500px;
+  border: 4px solid #d3b168;
+}
+
+.stripes .inner::before {
+  content: "";
+  z-index: -1;
+  width: calc(100% + 1000px);
+  height: calc(100% + 144px);
+  transform-origin: center center;
+  transform: rotate(-6deg);
+  position: absolute;
+  top: -54px;
+  left: -500px;
+  border: 2px solid #d3b168;
+} */
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 72px 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #b60609;
+  box-sizing: border-box;
+}
+
+.footer::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 10px);
+  position: absolute;
+  top: -12px;
+  /* top: calc(-76px + -14px); */
+  /* left: -4px; */
+  /* background: green; */
+  border-top: 4px solid #b60609;
+}
+
+.footer .header {
+  color: #fefefe;
+}
+
+.footer .text {
+  width: 100%;
+  max-width: 600px;
+  padding: 36px 8px 8px;
+
+  font-family: Open Sans;
+  font-weight: 200;
+  font-size: 10px;
+  color: #fefefe;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+  button.foodora:hover {
+    background-color: rgb(196, 14, 90);
+    border-color: rgb(196, 14, 90);
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+}
+
+button:active {
+  opacity: 0.6;
+}
